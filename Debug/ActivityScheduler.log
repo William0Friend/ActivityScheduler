@@ -1,0 +1,3 @@
+﻿  Scheduler.cpp
+C:\Users\wfriend\Downloads\ActivityScheduler\ActivityScheduler\Scheduler.cpp(30): warning C4715: 'Scheduler::getActivity': not all control paths return a value
+  ActivityScheduler.vcxproj -> C:\Users\wfriend\Downloads\ActivityScheduler\ActivityScheduler\Debug\ActivityScheduler.exe
