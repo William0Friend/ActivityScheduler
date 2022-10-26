@@ -14,30 +14,19 @@
 //If you need to control the width of an output field and the fill character, you can use the following: 
 //std::cout <<std::setw(4) << std::setfill(�#�) << 12 << std::endl;
 
-
-//const int MAX_ACTIVITIES = 10;
-
 int main()
 {
 Scheduler scheduler;
 //int activityId = 10;
 int activityId[MAX_ACTIVITIES];
-
 int i = 0;
 int num_activities = 0;
 
-
-
 for (i = 0; i < MAX_ACTIVITIES; i++) {
-
 	activityId[i] = 0;
-
 }
 
-
-
 // create and register each activity with the scheduler,  
-
 // and save its id 
 
 i = 0;

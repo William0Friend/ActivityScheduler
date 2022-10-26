@@ -2,9 +2,9 @@
 
 	
 ScheduledActivity::ScheduledActivity(IActivity* obj) {
-	activity = obj;
-	activityId = IdNum;
-	IdNum++;
+	this->activity = obj;
+	this->activityId = IdNum;
+	this->IdNum++;
 }
 //The constructor receives a pointer to an IActivity object,
 //stores it in attribute activity, sets activityId to the

@@ -10,12 +10,10 @@ Activity::Activity() {
 Activity::Activity(std::string value) {
 	this->value = value;
 }
+
 void Activity::requestValue() {
-	//std::string temp;
 	std::cout << "Enter Value: ";
-	std::cin >> this->value;//temp;
-	//std::cout << std::endl;
-	//this -> value = temp
+	std::cin >> this->value;
 }
 
 void Activity::displayValue() {

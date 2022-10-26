@@ -1,3 +1,25 @@
-﻿  Scheduler.cpp
-C:\Users\wfriend\Downloads\ActivityScheduler\ActivityScheduler\Scheduler.cpp(30): warning C4715: 'Scheduler::getActivity': not all control paths return a value
-  ActivityScheduler.vcxproj -> C:\Users\wfriend\Downloads\ActivityScheduler\ActivityScheduler\Debug\ActivityScheduler.exe
+﻿  AcctId.cpp
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(7,6): error C2039: 'string': is not a member of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\predefined C++ types (compiler internal)(340): message : see declaration of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(7,18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(7,13): error C2146: syntax error: missing ';' before identifier 'attId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(19,10): error C2039: 'string': is not a member of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\predefined C++ types (compiler internal)(340): message : see declaration of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(19,17): error C3646: 'acctId': unknown override specifier
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(19,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(22,17): error C2039: 'string': is not a member of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\predefined C++ types (compiler internal)(340): message : see declaration of 'std'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(22,11): error C2061: syntax error: identifier 'string'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(22,11): error C2535: 'AcctId::AcctId(void)': member function already defined or declared
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(21): message : see declaration of 'AcctId::AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.cpp(5,8): error C2039: 'acctId': is not a member of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(9): message : see declaration of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.cpp(7,36): error C2511: 'AcctId::AcctId(std::string)': overloaded member function not found in 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(9): message : see declaration of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.cpp(8,2): error C2671: 'AcctId::{ctor}': static member functions do not have 'this' pointers
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.cpp(12,20): error C2039: 'acctId': is not a member of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(9): message : see declaration of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.cpp(15,37): error C2039: 'acctId': is not a member of 'AcctId'
+C:\Users\willi\OneDrive\Desktop\ActivityScheduler\AcctId.h(9): message : see declaration of 'AcctId'
+  Main.cpp
+  Generating Code...

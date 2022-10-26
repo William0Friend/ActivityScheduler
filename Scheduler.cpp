@@ -1,32 +1,34 @@
 #include "Scheduler.h"
 #include <iostream>
-int ScheduledActivity::IdNum = 33;
-
+int ScheduledActivity::IdNum = 33;//MUST BE ATLEAST 33
 
 Scheduler::Scheduler() {
     this->num_activities = 0;
 }
 int Scheduler::addActivity(IActivity* obj) {
-    activities[num_activities] = new ScheduledActivity(obj);
-    num_activities++;
-    return activities[num_activities - 1]->getActivityId();
+    this->activities[num_activities] = new ScheduledActivity(obj);
+    this->num_activities++;
+    return this->activities[num_activities - 1]->getActivityId();
 }
 void Scheduler::run() {
     // first invokes requestValue() for each scheduled activity, 
-    // then invokes displayValue() for each scheduled activity.
     for (int i = 0; i < this->num_activities; i++) {
-        activities[i]->getActivity()->requestValue();
-        
+        this->activities[i]->getActivity()->requestValue();
     }
+    // then invokes displayValue() for each scheduled activity.
     std::cout << std::endl;
     for (int i = 0; i < this->num_activities; i++) {
-        activities[i]->getActivity()->displayValue();
+        this->activities[i]->getActivity()->displayValue();
     }
 }
 ScheduledActivity* Scheduler::getActivity(int id) {
-    for (ScheduledActivity * act : activities) {
-        if (id == act->getActivityId()) {
-            return act;
+    for (ScheduledActivity * obj : activities) {
+        if (id == obj->getActivityId()) {
+            return obj;
+        }
+        else {
+            std::cout << "Id " << id << " not found" << std::endl;
+            return 0;
         }
     }
 }
@@ -35,12 +37,11 @@ ScheduledActivity* Scheduler::getActivity(int id) {
 //the returns the corresponding activity.
 
 //The destructor must delete all ScheduledActivity objects it allocated.
-
 Scheduler::~Scheduler() {
-        for(int i=0;i>num_activities;i--)
+  
+    for (int i = 0; i > num_activities-1; i--)
         {
-            activities[i]->~ScheduledActivity();
-        
+            this->activities[i]->~ScheduledActivity();
         }
-    
+     
 }

@@ -1,12 +1,10 @@
 #include "Name.h"
 #include <iostream>
 
-
 Name::Name() {
 	this->firstName = "";
 	this->lastName = "";
 }
-
 
 Name::Name(std::string firstName, std::string lastName) {
 	this->firstName = firstName;
@@ -21,7 +19,5 @@ void Name::requestValue() {
 }
 
 void Name::displayValue() {
-	std::cout << "Value is: " << this->firstName << this->lastName
-		<< std::endl;
-
+	std::cout << "First Name: " << this->firstName << std::endl << "Last Name: " << this->lastName << std::endl;
 }
